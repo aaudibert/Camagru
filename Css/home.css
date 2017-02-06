@@ -1,0 +1,134 @@
+/*nav ul
+{
+    margin-left: 0%;
+}*/
+body
+{
+	background-image:url("../abstract-mosaic-background.png");
+}
+#content
+{
+	width: 900px;
+	margin: auto;
+}
+
+#rendu_final 
+{
+	width: 320px;
+	margin: auto;
+	position: relative;
+}
+#filter_prev
+{
+	float: left;
+	position: absolute;
+	width: 320px;
+	margin: auto;
+	z-index: 1;
+	height: 240px;
+}
+#video
+{
+	position: absolute;
+	z-index: 0;
+}
+#canvas
+{
+	position: relative;
+	margin-top: 250px;
+	margin-left: 290px;
+}
+#bouton
+{
+	display: block; padding: 25px 40px;
+    color: #757575; text-decoration: none;
+    border-radius: 10px; 
+    background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #034387 0%,#002450 100%); 
+    background: -webkit-linear-gradient(top, #034387 0%,#002450 100%); 
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
+    margin-top: 10px;
+}
+.filter1
+{
+	background: url('../Filters/filter1.png');
+	background-repeat: no-repeat;
+	background-position: 0px 60px;
+}
+.filter2
+{
+	background: url('../Filters/filter2.png');
+	background-repeat: no-repeat;
+	background-position: 190px 0px;
+}
+.filter3
+{
+	background: url('../Filters/filter3.png');
+	background-repeat: no-repeat;
+	background-position: 146px 99px; 
+}
+.del
+{
+	padding: 25px 40px;
+    color: #757575; text-decoration: none;
+    border-radius: 10px; 
+    background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+    background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+    background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
+    margin-top: -125px;
+    margin-left: 250px;	
+    float: right;
+}
+.block
+{
+	width: 881px;
+	margin-left: 20%;
+}
+.img
+{
+	border: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
+	border-radius: 54px;
+}
+
+.upload_file
+{
+  	width: 320px;
+	height: 240px;
+}
+.user_log
+{
+	color: #757575; text-decoration: none;
+}
+.photo
+{
+	margin-left: 251px;
+}
+@media (max-width: 1280px) {
+	#rendu_final
+	{
+		float: left;
+		margin-left: 14%;
+	}
+	.overall
+	{
+		float: right;
+		margin-right: 24%;
+	}
+	.del
+	{
+		 float: right;
+   		 margin-right: 13%;
+	}
+	#canvas
+	{
+		margin-left: 14%;
+	}
+	#bouton
+	{
+		margin-right: 35%;
+	}
+}

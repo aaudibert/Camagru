@@ -1,0 +1,46 @@
+ul.header {
+    z-index: 3;
+    /*position: fixed;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333e52;
+    top: 0;
+    font-family: arial;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+.content {
+    padding-top: 7%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.eheader {
+    vertical-align: middle;
+    float: left;
+}
+
+.righth {
+    float: right;
+}
+
+.eheader a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 25px;
+    background-color: #333e52;
+    text-decoration: none;
+}
