@@ -1,3 +1,3 @@
 <?php
-header('Location: Controlers/sign_in.php');
+header('Location: Views/gallery.php');
 ?>

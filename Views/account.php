@@ -9,10 +9,10 @@
 	require('../Views/header.php');
 ?>
 
-	<form method="POST" action="../Controlers/account.php">
-		<input type="password" name="password" placeholder="password" required=""><br>
-		<input type="password" name="rpassword" placeholder="confirm password" required=""><br>
-		<button type="submit" class="button" name="btn-pwd"> Change password </button>
+	<form method="POST" action="../Controlers/account.php" class="form" id="account">
+		<div><input type="password" name="password" placeholder="password" required=""><br></div>
+		<div><input type="password" name="rpassword" placeholder="confirm password" required=""><br></div>
+		<input type="submit" class="button" name="btn-pwd" value="Change password">
 	</form>
 
 <?php require '../Views/footer.php' ?>

@@ -21,7 +21,7 @@
 			if (!empty($_POST)) {
 				if (!empty($_POST['password']) && !strcmp($_POST['password'], $_POST['rpassword'])) {
 					$db->prepare('UPDATE users SET password = ? WHERE user_id = ?')->execute(array(hash('whirlpool', $_POST['password']), $id));
-					$_SESSION['flash']['success'] = 'Your password was successfully changed, welcome back!';		
+					$_SESSION['success']['success'] = 'Your password was successfully changed, welcome back!';		
 					$_SESSION['auth'] = $user;
 					header('Location: ../views/home.php');
 					exit();
@@ -44,10 +44,10 @@
 	require '../Views/header.php';
  ?>
 
-	 <form method="POST">
-		<input type="password" name="password" placeholder="new password" required=""><br>
-		<input type="password" name="rpassword" placeholder="confirm new password" required=""><br>
-		<button type="submit" class="button" name="btn-pwd"> Change password </button>
+	 <form method="POST" class='formi' id='reset'>
+		<div><input type="password" name="password" placeholder="new password" required=""><br></div>
+		<div><input type="password" name="rpassword" placeholder="confirm new password" required=""><br></div>
+		<input type="submit" class="button" name="btn-pwd" value="Change password">
 	</form>
 
 <?php require '../Views/footer.php' ?>

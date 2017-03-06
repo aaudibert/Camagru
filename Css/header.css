@@ -1,18 +1,24 @@
 ul.header {
-    z-index: 3;
-    /*position: fixed;*/
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: #333e52;
     top: 0;
     font-family: arial;
+    display: inline-block;
+    margin: auto;
     width: 100%;
+    padding: 0;
+    font-family: 'Jura', arial;
+    background-color: white;
+    text-align: center;
+    z-index: 3;
 }
 
 body {
     margin: 0;
+}
+
+ul.header li {
+    display: inline-block;
 }
 
 .gras {
@@ -20,27 +26,83 @@ body {
 }
 
 .content {
-    padding-top: 7%;
-    position: absolute;
+    margin: auto;
+    text-align: center;
     width: 100%;
     height: 100%;
+    font-family: 'Josefin sans', arial;
+    margin-top: 10%; 
+}
+
+.header {
+    position: fixed;
+    vertical-align: middle;
+    margin: 0 auto;
 }
 
 .eheader {
-    vertical-align: middle;
-    float: left;
-}
-
-.righth {
-    float: right;
+    display: inline-block;
 }
 
 .eheader a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
-    font-size: 25px;
-    background-color: #333e52;
+    font-size: 30px;
     text-decoration: none;
+}
+
+.header a {
+    font-size: 2.3em;
+
+}
+
+a {
+    text-decoration: none;
+    color: #525252;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#header a {
+    color: black;
+    font-family: 'Fredericka The Great', arial;
+}
+
+/*Error box*/
+
+.error_box {
+    border: 2px solid #e41717;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+    color: #e41717;
+}
+
+.error_txt {
+    color: #e41717;
+    text-align: center;
+    font-size: medium;
+}
+
+.flash {
+    font-size: x-large;
+}
+
+.success {
+    color: #239411;
+}
+
+/*Reset*/
+
+#reset {
+    margin-top: 12%;
+}
+
+/*Account, Forgot*/
+
+#account, #forgot {
+    margin-top: 15%;
 }
